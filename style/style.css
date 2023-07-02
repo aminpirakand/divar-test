@@ -14,7 +14,7 @@ p {
   .header{
     height: 60px;
     background-color: lightblue;
-
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,7 +54,7 @@ p {
   }
   .Category-button{
     margin-right: 10px;
-    padding: 9px 15px;
+    padding: 9px 20px;
     border: none;
     border-radius: 2px;
     display: flex;
@@ -64,6 +64,19 @@ p {
     font-size: larger;
     font-weight: 500;
   }
-  .Category-button i{
-    padding-right: 10px;
+  /*CENTER HEADER*/
+  
+  .search-input{
+    padding:10px;
+    border-radius: 4px;
+    border: none;
+    background-color:rgb(228, 225, 225);
+    margin-right: -4px;
+  }
+  .search-button{
+    padding: 11px;
+    border: none;
+    border-radius: 4px;
+    background-color:rgb(228, 225, 225);
+
   }
