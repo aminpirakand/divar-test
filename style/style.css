@@ -1,133 +1,131 @@
 /*General CSS*/
 p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  body {
-    /* This style below will be inherited */
-    font-family: Roboto, Arial;
-    margin: 0;
-  }
-  /*HEADER CSS*/
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-  .header{
-    height: 60px;
-    border: 1px solid rgb(228, 228, 228);
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+body {
+  /* This style below will be inherited */
+  font-family: Roboto, Arial;
+  margin: 0;
+}
+/*HEADER CSS*/
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-  }
-  
-  /*Right Header*/
-  .right-header{
-    width: 300px;
-    display: flex;
-    align-items: center;
-  }
-  .right-header img{
-    height: 48px;
-    border-left: 1px solid black;
-    padding-left: 15px;
-    margin-right: 100px;
-  }
-  .location-button{
-    display: flex;
-    margin-right: 25px;
-    margin-left: 20px;
-    padding: 9px 20px;
-    border: none;
-    border-radius: 2px;
-    align-items: center;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  .location-button i{
-    margin-left: 6px;
-    font-size: 18px;
-  }
-  .location-button span{
-    font-size: larger;
-    font-weight: 500;
-  }
-  
-  /*CENTER HEADER*/
-  
-  .center-header{
-    display: flex;
-    flex: 1;
-    margin-left: 70px;
-    max-width: 500px;
-    align-items: center;
-    padding: 12px;
-  }
-    /*category-button*/
-  .Category-button{
-    background-color: transparent;
-    display: flex;
-    margin-right: 10px;
-    margin-left: 20px;
-    padding: 9px 20px;
-    border: none;
-    border-radius: 2px;
-    align-items: center;
-    cursor: pointer;
-  }
-  .Category-button span{
-    font-size: 14px;
-    font-weight: 500;
-  }
-  .Category-button i{
-    margin-right: 10px;
-  }
+.header{
+  height: 60px;
+  border: 1px solid rgb(228, 228, 228);
 
-  .search-button{
-    padding: 13px;
-    margin-top: 1px;
-    border: none;
-    border-radius: 4px;
-    background-color:rgb(228, 225, 225);
-    cursor: pointer;
-  }
-
-  .search-input{
-    display: flex;
-    align-items: center;
-    flex: 1;
-    font-size: 16px;
-    width: 0;
-    padding:10px;
-    border-radius: 4px;
-    border: none;
-    background-color:rgb(228, 225, 225);
-    margin-right: -4px;
-    cursor: pointer;
-  }
-  /*left-header*/
-  .left-header {
-    padding: 12px;
-    display: flex;
-    width: 500px;
-    align-items: center;
-  }
-  
-.user-button{
-  background-color: transparent;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/*Right Header*/
+
+.right-header{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 9px;
+}
+.right-header img{
+  height: 46px;
+  border-left: 1px solid black;
+  padding-left: 15px;
+  margin-right: 100px;
+}
+.location-button{
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 2px;
+  align-items: center;
+  background-color: transparent;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+}
+.location-button i{
+  margin-left: 6px;
+  font-size: 18px;
+}
+.location-button span{
+  font-size: larger;
+  font-weight: 500;
+}
+
+/*CENTER HEADER*/
+
+.center-header{
+  display: flex;
+  flex: 2;
+  align-items: center;
+  padding: 12px;
+}
+  /*category-button*/
+.Category-button{
+  background-color: transparent;
+  margin-right: 10px;
   margin-left: 20px;
   padding: 9px 20px;
   border: none;
   border-radius: 2px;
   align-items: center;
-  width: 160px;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+}
+.Category-button span{
+  font-size: 14px;
+  font-weight: 500;
+}
+.Category-button i{
+  margin-right: 10px;
+}
+
+.search-button{
+  padding: 13px;
+  margin-right: -10px;
+  margin-top: 1px;
+  border: none;
+  border-radius: 4px;
+  background-color:rgb(241, 237, 237);
+  cursor: pointer;
+}
+.search-input{
+  align-items: center;
+  font-size: 16px;
+  width: 450px;
+  padding:10px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color:rgb(241, 237, 237);
+  margin-right: -4px;
+  cursor: pointer;
+}
+
+/*Left-header*/
+
+.left-header {
+  padding: 12px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  }
+.user-button{
+  background-color: transparent;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 2px;
+  align-items: center;
+  width: 110px;
   height: 40px;
   cursor: pointer;
 }
@@ -138,34 +136,36 @@ p {
 }
 .chat-button{
   background-color: transparent;
-  display: flex;
-  margin-right: 25px;
-  margin-left: 20px;
-  padding: 9px 20px;
+  padding: 9px 10px;
   border: none;
   border-radius: 2px;
   align-items: center;
+  width: 110px;
+  height: 40px;
   cursor: pointer;
 }
 .support-button{
   background-color: transparent;
-  display: flex;
-  margin-right: 25px;
-  margin-left: 20px;
-  padding: 9px 20px;
+  padding: 9px 10px;
   border: none;
   border-radius: 2px;
   align-items: center;
+  width: 110px;
+  height: 40px;
   cursor: pointer;
 }
 .record-button{
-  background-color: red;
+  padding: 9px 10px;
+  background-color: rgb(184, 31, 31);
   color: white;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
   border: none;
   border-radius: 6px;
-  width: 160px;
+  width: 90px;
   height: 40px;
+  margin-left: 80px;
+  margin-right: 10px;
   text-align: center;
   cursor: pointer;
 }
@@ -175,4 +175,5 @@ p {
 .Category-button:hover,
 .location-button:hover{
   background-color: rgb(219, 219, 219,0.4);
+  transition: 0.8s;
 }
