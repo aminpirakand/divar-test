@@ -30,7 +30,7 @@ body {
 
 .right-header{
   display: flex;
-  flex: 1;
+  flex: 25%;
   align-items: center;
   padding: 9px;
 }
@@ -65,7 +65,7 @@ body {
 
 .center-header{
   display: flex;
-  flex: 2;
+  flex: 50%;
   align-items: center;
   padding: 12px;
 }
@@ -116,7 +116,7 @@ body {
 .left-header {
   padding: 12px;
   display: flex;
-  flex: 1;
+  flex: 25%;
   align-items: center;
   }
 .user-button{
@@ -176,4 +176,64 @@ body {
 .location-button:hover{
   background-color: rgb(219, 219, 219,0.4);
   transition: 0.8s;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+  }
+  .center-header{
+    position: fixed;
+    left: 70px;
+    right: 30px;
+    top: 0;
+    flex: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+  .search-input{
+    margin-left: 70px;
+  }
+  .Category-button{
+    display: none;
+  }
+  .left-header{
+    position: fixed;
+    bottom: 0;
+    flex: 100%;
+    width: 100%;
+    background-color: rgb(219, 219, 219,0.4);
+    justify-content: center;
+    align-content: center;
+  }
+  .right-header{
+    display: none;
+  }
+  .record-button{
+    margin-left: 0px;
+  }
+  .support-button,
+  .chat-button{
+    display: block !important;
+  }
+}
+@media (max-width: 1438px) {
+  
+  .support-button,
+  .chat-button{
+    display: none;
+  }
+}
+@media (max-width:1200px){
+  .right-header{
+    display: none;
+  }
+  .center-header{
+    display: flex;
+    flex: 70%;
+  }
+  .left-header{
+    display: flex;
+    flex: 30%;
+  }
 }
