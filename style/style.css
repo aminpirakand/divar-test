@@ -237,3 +237,14 @@ body {
     flex: 30%;
   }
 }
+.section{
+  display: flex;
+}
+.main{
+  height: 100px;
+  flex: 75%;
+}
+.sidebar{
+  height: 100px;
+  flex: 25%;
+}
