@@ -14,7 +14,7 @@ body {
 .header{
   height: 60px;
   border: 1px solid rgb(228, 228, 228);
-
+background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,7 +23,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 /*Right Header*/
@@ -202,9 +202,10 @@ body {
     bottom: 0;
     flex: 100%;
     width: 100%;
-    background-color: rgb(219, 219, 219,0.4);
+    background-color:rgb(238, 238, 238);
     justify-content: center;
     align-content: center;
+    position: fixed;
   }
   .right-header{
     display: none;
@@ -236,15 +237,67 @@ body {
     display: flex;
     flex: 30%;
   }
+  
 }
 .section{
   display: flex;
 }
 .main{
+  z-index: 0;
+  margin-top: 90px;
+  display: flex;
   height: 100px;
   flex: 75%;
+  flex-wrap: wrap;
 }
 .sidebar{
   height: 100px;
   flex: 25%;
+}
+ /*card*/
+ .card{
+  padding: 10px;
+  display: flex;
+  margin: 10px;
+  width: 320px;
+  height: 180px;
+  border: 1px solid rgb(185, 184, 184);
+  border-radius: 5px;
+ }
+ .card-description{
+  flex: 80%;
+ }
+.card-image{
+  flex: 20%;
+}
+.head-description{
+  margin-right: 5px;
+  display: flex;
+}
+.main-description{
+  display: flex;
+  flex-direction: row;
+}
+.left-description{
+  width: 120px;
+}
+.right-description{
+  margin-right: 20px;
+  position: relative;
+}
+.right-description>button{
+  position: absolute;
+  bottom: 5px;
+  border: none;
+  background-color: transparent;
+}
+.desc-1{
+  color: rgb(117, 116, 116);
+  margin-right: 5px;
+  margin-top:30px;
+}
+.desc{
+  color: gray;
+  margin-right: 5px;
+  margin-top: 15px;
 }
