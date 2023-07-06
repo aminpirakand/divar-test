@@ -246,14 +246,11 @@ background-color: white;
   z-index: 0;
   margin-top: 90px;
   margin-left: 92px;
+  margin-right: 300px;
   display: flex;
-  height: 100px;
   flex: 75%;
   flex-wrap: wrap;
-}
-.sidebar{
-  height: 100%;
-  flex: 25%;
+  width: 1000px;
 }
  /*card*/
  .card{
@@ -303,4 +300,24 @@ background-color: white;
   color: gray;
   margin-right: 5px;
   margin-top: 15px;
+}
+/*sidebar*/
+.sidebar{
+  height: 1000px;
+  width: 300px;
+  flex: 25%;
+  position: fixed;
+  background-color: red;
+  z-index: 100;
+}
+.sidebar> ul{
+  list-style: none;
+  padding: 10px 10x;
+}
+.sidebar> ul > li {
+  padding: 10px;
+}
+.sidebar>ul > li > a {
+  text-decoration: none;
+  color: black;
 }
