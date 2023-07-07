@@ -302,22 +302,78 @@ background-color: white;
   margin-top: 15px;
 }
 /*sidebar*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 .sidebar{
-  height: 1000px;
-  width: 300px;
-  flex: 25%;
-  position: fixed;
-  background-color: red;
-  z-index: 100;
+    position: fixed;
+    height: 100%;
+    width: 260px;
+    background-color:#ffffff;
+    padding: 15px;
+    z-index: 99;
 }
-.sidebar> ul{
-  list-style: none;
-  padding: 10px 10x;
+.sidebar a {
+    color:black;
+    text-decoration: none;
+  }
+.menu-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
 }
-.sidebar> ul > li {
-  padding: 10px;
+.menu-content::-webkit-scrollbar {
+    display: none;
+  }
+  .menu-items{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    transition: all 0s ease;
+  }
+  .submenu-active .menu-items {
+    transform: translateX(-56%);
+  }
+  .menu-title{
+    color: black;
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  width: 80%;
+  border-radius: 12px;
+  cursor: pointer;
 }
-.sidebar>ul > li > a {
-  text-decoration: none;
-  color: black;
-}
+.item i {
+    font-size: 12px;
+  }
+  .item a:hover,
+  .submenu-item:hover,
+  .submenu .menu-title:hover {
+    background: rgba(10, 10, 10, 0.1);
+  }
+  .submenu{
+    background-color: #ffffff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: calc(100%);
+    height: calc(100% + 100vh);
+    display: none;
+  }
+.show-submenu ~ .submenu {
+    display: block;
+  }
+  .submenu .menu-title {
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .submenu .menu-title i {
+    margin-left: 10px;
+  }
