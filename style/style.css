@@ -328,7 +328,7 @@ background-color: white;
     display: none;
   }
   .menu-items{
-    height: 100%;
+    height:calc(100% + 20vh);
     width: 100%;
     list-style: none;
     transition: all 0s ease;
@@ -345,7 +345,7 @@ background-color: white;
 .submenu-item {
   padding: 16px;
   display: inline-block;
-  width: 80%;
+  width: 100%;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -360,11 +360,10 @@ background-color: white;
   .submenu{
     background-color: #ffffff;
     position: absolute;
-    height: 100%;
     width: 100%;
     top: 0;
     left: calc(100%);
-    height: calc(100% + 100vh);
+    height: calc(100% + 50vh);
     display: none;
   }
 .show-submenu ~ .submenu {
@@ -376,4 +375,31 @@ background-color: white;
   }
   .submenu .menu-title i {
     margin-left: 10px;
+  }
+
+  /*Footer*/
+  footer{
+    background-color: white;
+    position: absolute;
+    bottom:-280px;
+    left: 0;
+    right:20px;
+    z-index: 1000;
+
+  }
+  .footer-head a{
+    font-size: 12px;
+    padding: 5px;
+    color: rgb(78, 78, 78);
+  }
+  .footer-main{
+    padding: 10px 0;
+    margin-right:10px ;
+  }
+  .footer-main a{
+    padding: 10px 15px;
+  }
+  .footer-foot img{
+    padding-right: 20px;
+    width: 60px;
   }
